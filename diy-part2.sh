@@ -13,3 +13,6 @@
 # Modify default IP & password
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 sed -i '1c root:$1$w4fjHeEK$PHl6CC2NESlaa7C7AP9PU.:19325:0:99999:7:::' package/base-files/files/etc/shadow
+
+# 修改 argon 为默认主题
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile

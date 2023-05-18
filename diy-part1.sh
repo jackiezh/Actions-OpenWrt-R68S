@@ -27,4 +27,3 @@ cp $GITHUB_WORKSPACE/02_network target/linux/rockchip/armv8/base-files/etc/board
 # 替换默认的 argon 主题
 rm -rf package/lean/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
